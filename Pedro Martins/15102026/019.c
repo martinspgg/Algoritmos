@@ -4,25 +4,31 @@ O programa deve solicitar a inserção de um número inteiro qualquer e verifica
 */
 
 
+// Funcoes padrao de leitura e escrita.
 #include <stdio.h>
 
 int main()
 {
+    // Valor inteiro que sera classificado em par ou impar.
     int nNumero = 0;
 
+    // Solicita o numero e o armazena na variavel.
     printf("\nDigite um numero inteiro: ");
     scanf("%d", &nNumero);
 
     printf("\n================ RESULTADOS ================");
 
+    // % calcula o resto da divisao por 2; resto zero indica numero par.
     if (nNumero % 2 == 0) {
         printf("\nO numero %d e PAR.", nNumero);
     }
+    // Caso o resto nao seja zero, o numero e impar.
     else {
         printf("\nO numero %d e IMPAR.", nNumero);
     }
 
     printf("\n============================================\n");
 
+    // Termina normalmente.
     return 0;
 }

@@ -4,26 +4,33 @@ O programa deve receber a idade de um indivíduo como um número inteiro via tec
 */
 
 
+// Biblioteca para printf e scanf.
 #include <stdio.h>
 
 int main()
 {
+    // Guarda a idade digitada pelo usuario.
     int nIdade = 0;
 
+    // Pede e recebe a idade como numero inteiro.
     printf("\nDigite sua idade: ");
     scanf("%d", &nIdade);
 
     printf("\n================ RESULTADOS ================");
 
+    // if: executa este bloco quando a idade e de 18 anos ou mais.
     if (nIdade >= 18) {
         printf("\nVoce esta apto a iniciar o processo de habilitacao.");
     }
+    // else: executa este bloco quando a condicao anterior e falsa.
     else {
         printf("\nVoce nao esta apto a iniciar o processo de habilitacao.");
         printf("\nMotivo: idade inferior a 18 anos.");
     }
 
+    // Fecha a apresentacao do resultado.
     printf("\n============================================\n");
 
+    // Finaliza sem erro.
     return 0;
 }
