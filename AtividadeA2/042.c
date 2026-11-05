@@ -28,12 +28,14 @@ int main() {
             printf("Digite o segundo numero: ");
             scanf("%f", &b);
             printf("Resultado: %.2f\n", a + b);
+
         } else if (opcao == 2) {
             printf("Digite o primeiro numero: ");
             scanf("%f", &a);
             printf("Digite o segundo numero: ");
             scanf("%f", &b);
             printf("Resultado: %.2f\n", a * b);
+            
         } else if (opcao != 0) {
             // Qualquer valor que não seja 0, 1 ou 2 é inválido
             printf("Opcao invalida!\n");
