@@ -1,6 +1,10 @@
 /*
 Exercício 41: Acumulador Aritmético Controlado por Sentinela Nulo
-O programa deve capturar números inteiros de forma indeterminada a partir do teclado até que o usuário digite o número zero, que funciona como valor sentinela para encerrar a execução. O laço while (numero != 0) deve somar os valores válidos e incrementar uma variável contadora a cada iteração; ao término, o terminal exibe o total de números computados e o somatório acumulado, desconsiderando a sentinela nas estatísticas.
+O programa deve capturar números inteiros de forma indeterminada a partir do teclado até que o 
+usuário digite o número zero, que funciona como valor sentinela para encerrar a execução. O laço 
+while (numero != 0) deve somar os valores válidos e incrementar uma variável contadora a cada 
+iteração; ao término, o terminal exibe o total de números computados e o somatório acumulado, 
+desconsiderando a sentinela nas estatísticas.
 */
 
 #include <stdio.h>

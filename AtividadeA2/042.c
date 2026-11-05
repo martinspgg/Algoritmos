@@ -1,6 +1,10 @@
 /*
 Exercício 42: Menu Interativo de Operações Matemáticas Recorrentes
-O programa deve exibir repetidamente na tela um menu textual com opções de cálculo: código 1 para soma de dois números reais, código 2 para multiplicação e código 0 para encerramento do sistema. Estruturado com while (opcao != 0), o programa deve ler a escolha do usuário, executar a operação solicitada capturando os operandos pertinentes ou emitir um alerta em caso de opção inexistente, repetindo o ciclo até que o comando de saída seja fornecido.
+O programa deve exibir repetidamente na tela um menu textual com opções de cálculo: código 1 
+para soma de dois números reais, código 2 para multiplicação e código 0 para encerramento do 
+sistema. Estruturado com while (opcao != 0), o programa deve ler a escolha do usuário, executar 
+a operação solicitada capturando os operandos pertinentes ou emitir um alerta em caso de opção 
+inexistente, repetindo o ciclo até que o comando de saída seja fornecido.
 */
 
 #include <stdio.h>
@@ -19,12 +23,16 @@ int main() {
         scanf("%d", &opcao);
 
         if (opcao == 1) {
-            printf("Digite dois numeros: ");
-            scanf("%f %f", &a, &b);
+            printf("Digite o primeiro numero: ");
+            scanf("%f", &a);
+            printf("Digite o segundo numero: ");
+            scanf("%f", &b);
             printf("Resultado: %.2f\n", a + b);
         } else if (opcao == 2) {
-            printf("Digite dois numeros: ");
-            scanf("%f %f", &a, &b);
+            printf("Digite o primeiro numero: ");
+            scanf("%f", &a);
+            printf("Digite o segundo numero: ");
+            scanf("%f", &b);
             printf("Resultado: %.2f\n", a * b);
         } else if (opcao != 0) {
             // Qualquer valor que não seja 0, 1 ou 2 é inválido
