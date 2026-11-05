@@ -1,0 +1,119 @@
+Exercício 10: Termometria Linear e Conversão de Escalas de Temperatura
+O programa deve capturar a temperatura ambiente expressa em graus Celsius por meio de entrada em ponto flutuante. O processamento deve converter o valor informado para as escalas Fahrenheit e Kelvin através das expressões matemáticas formais F = (C × 9.0 / 5.0) + 32.0 e K = C + 273.15, garantindo que as constantes sejam declaradas com casas decimais para evitar coerção indevida para divisão inteira, apresentando ambos os resultados com duas casas decimais.
+
+
+Exercício 11: Dimensionamento Salarial Líquido com Descontos Estatutários
+O programa deve realizar a leitura da quantidade total de horas laboradas por um colaborador (número inteiro) e o valor contratual recebido por cada hora prestada (ponto flutuante). O processamento deve computar o salário bruto (Horas × ValorHora), calcular uma dedução previdenciária de 11% e um desconto adicional de imposto de renda de 5%, deduzir ambos os montantes para apurar o salário líquido e exibir o detalhamento contábil no terminal.
+
+
+Exercício 12: Métrica de Eficiência e Rendimento Veicular
+O programa deve interagir com o usuário para obter a distância total percorrida por um veículo em quilômetros e o volume total de combustível consumido ao longo do trajeto em litros (ambos do tipo float). O algoritmo deve processar o rendimento operacional expresso pela razão km/l e estimar o dispêndio financeiro médio por quilômetro rodado com base no preço fixado do litro de combustível, exibindo os índices de rendimento e custo formatados.
+
+
+Exercício 13: Geometria Euclidiana de Superfícies Planas Quadriláteras
+O programa deve capturar do teclado as dimensões de um terreno retangular, representadas pela extensão da base e pela altura vertical (valores de ponto flutuante). A rotina deve calcular a área superficial total dada pelo produto das dimensões e o comprimento do perímetro perimétrico dado pela soma de todos os lados (2 × (Base + Altura)), exibindo os resultados acompanhados das respectivas unidades métricas.
+
+
+Exercício 14: Leitura Heterogênea e Controle de Resíduos no Buffer de Entrada
+O programa deve ler consecutivamente o primeiro nome de um cidadão (cadeia de caracteres limitada a 49 posições com %49s), a sua idade cronológica (inteiro), o peso em quilogramas (ponto flutuante) e a inicial de identificação do gênero ('M' ou 'F'). A implementação deve aplicar o especificador de vetor de caracteres sem o operador & e forçar o descarte de resíduos de quebra de linha pendentes no buffer de entrada ao incluir um espaço antes da máscara de leitura do caractere (" %c"), apresentando ao final os dados capturados.
+
+
+Exercício 15: Ponderação Acadêmica com Pesos Diferenciados
+O programa deve requisitar ao usuário três notas parciais obtidas por um estudante no decorrer do período letivo, todas representadas por números reais. O algoritmo deve aplicar a média ponderada adotando os pesos normalizados de 2, 3 e 5 para as respectivas avaliações, efetuando o cálculo pela fórmula Média = ((N1 × 2.0) + (N2 × 3.0) + (N3 × 5.0)) / 10.0 e imprimindo o resultado com precisão de duas casas decimais.
+
+
+Exercício 16: Decomposição Cronológica de Segundos em Horas e Minutos
+O programa deve ler um valor escalar inteiro representando um intervalo de tempo acumulado medido estritamente em segundos. A lógica de processamento deve decompor esse total acumulado em horas cheias, minutos remanescentes e segundos finais por meio de divisões inteiras sucessivas e operações de módulo com as bases 3600 e 60, imprimindo a formatação temporal analítica no padrão clássico de relógio digital HH:MM:SS.
+
+
+Exercício 17: Verificação de Maioridade Legal e Habilitação de Condutores
+O programa deve receber a idade de um indivíduo como um número inteiro via teclado. Utilizando uma estrutura condicional if associada ao ramo alternativo else, o código deve testar a condição Idade >= 18; caso verdadeira, o sistema imprime a confirmação de aptidão para abertura do processo de habilitação veicular; caso contrário, exibe mensagem indicando a restrição legal decorrente de menoridade.
+
+
+Exercício 18: Determinação de Paridade Numérica e Congruência Aritmética
+O programa deve solicitar a inserção de um número inteiro qualquer e verificar sua natureza quanto à paridade. O algoritmo deve isolar o resto da divisão por dois através da operação numero % 2 e compará-lo com zero com o operador relacional de igualdade ==, direcionando o fluxo para a impressão de que o valor é par no ramo verdadeiro ou ímpar no ramo falso.
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Exercício 10 — Conversão de Temperaturas
+Entrada (°C)	Fahrenheit (°F)	Kelvin (K)
+0	32,00	273,15
+25	77,00	298,15
+100	212,00	373,15
+-10	14,00	263,15
+36,5	97,70	309,65
+
+
+Exercício 11 — Cálculo Salarial
+Entrada	Teste 1	Teste 2	Teste 3
+Horas trabalhadas	160	200	100
+Valor por hora (R$)	20,00	25,00	15,00
+Salário bruto	3.200,00	5.000,00	1.500,00
+INSS (11%)	352,00	550,00	165,00
+IR (5%)	160,00	250,00	75,00
+Salário líquido	2.688,00	4.200,00	1.260,00
+
+
+Exercício 12 — Rendimento Veicular
+Para os testes, considere o preço fixo do combustível de R$ 6,00 por litro.
+Entrada / Saída	Teste 1	Teste 2	Teste 3
+Distância (km)	300	450	120
+Combustível (L)	20	30	10
+Rendimento (km/L)	15,00	15,00	12,00
+Custo por km (R$)	0,40	0,40	0,50
+Exercício 13 — Área e Perímetro
+Base (m)	Altura (m)	Área (m²)	Perímetro (m)
+10	5	50,00	30,00
+20	15	300,00	70,00
+7,5	4	30,00	23,00
+12	12	144,00	48,00
+
+
+Exercício 14 — Leitura de Dados
+Campo	Teste 1	Teste 2	Teste 3
+Nome	Carlos	Ana	Pedro
+Idade	25	19	42
+Peso (kg)	75,5	58,2	90,0
+Gênero	M	F	M
+Resultado esperado: o programa deve exibir os quatro dados exatamente conforme informados, respeitando a formatação escolhida para o peso.
+
+
+Exercício 15 — Média Ponderada
+Nota 1	Nota 2	Nota 3	Média esperada
+8,0	7,0	9,0	8,20
+5,0	6,0	7,0	6,30
+10,0	10,0	10,0	10,00
+4,0	5,0	6,0	5,30
+0,0	5,0	10,0	6,50
+
+
+Exercício 16 — Conversão de Segundos
+Entrada (segundos)	Resultado esperado
+3600	01:00:00
+3661	01:01:01
+7200	02:00:00
+125	00:02:05
+86399	23:59:59
+59	00:00:59
+0	00:00:00
+
+
+Exercício 17 — Verificação de Maioridade
+Idade informada	Resultado esperado
+15	Não apto
+17	Não apto
+18	Apto
+21	Apto
+60	Apto
+
+
+Exercício 18 — Par ou Ímpar
+Número informado	Resultado esperado
+10	Par
+7	Ímpar
+0	Par
+-4	Par
+-9	Ímpar
+101	Ímpar
+1000	Par
